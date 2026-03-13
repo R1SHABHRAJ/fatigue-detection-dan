@@ -78,7 +78,7 @@ The dataset used in this project is provided in a compressed file due to GitHub 
 
 Inside the "data/" folder 'data.zip' is placed as:
 
-data/
+data \
 ├── data.zip
 
 The file "data.zip" contains the physiological signal recordings for 25 drivers, where each driver file follows the format:
@@ -119,11 +119,11 @@ Expand-Archive data.zip
 After extraction, the folder structure should look like:
 
 data/
-├── drive1.csv
-├── drive2.csv
-├── drive3.csv
-...
-├── drive25.csv
+├── drive1.csv\
+├── drive2.csv\
+├── drive3.csv\
+...\
+├── drive25.csv\
 ├── Questionnaire_VS_Model.csv
 
 ------------------------------------------------------------------------
