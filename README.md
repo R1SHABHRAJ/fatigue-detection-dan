@@ -404,6 +404,26 @@ The models were evaluated using the following metrics:
 
 These metrics were used to compare the performance of **DAN with baseline models**.
 
+============================================================
+FULL MODEL COMPARISON SUMMARY
+============================================================
+
+=== Model Comparison Table ===
+
+| Model | Type | Input Data | Train Acc | Test Acc | Precision | Recall | Macro F1 | Rank (Acc) |
+|------|------|------------|-----------|----------|-----------|--------|----------|------------|
+| DAN + PCA (Best GS) | Deep Learning | PCA | 0.9235 | 0.8584 | 0.8567 | 0.8627 | 0.8575 | 1 |
+| DAN (Original) | Deep Learning | Raw (23 features) | 0.8562 | 0.8128 | 0.8160 | 0.8211 | 0.8124 | 2 |
+| BiRNN (Standalone) | Deep Learning | PCA | 0.7991 | 0.8082 | 0.8079 | 0.8134 | 0.8073 | 3 |
+| BiLSTM (Standalone) | Deep Learning | PCA | 0.9384 | 0.7945 | 0.7920 | 0.7878 | 0.7894 | 4 |
+| SVM (RBF) | Classical ML | PCA (flat) | 0.8893 | 0.7671 | 0.7674 | 0.7722 | 0.7662 | 5 |
+| Decision Tree | Classical ML | PCA (flat) | 0.8687 | 0.6758 | 0.6739 | 0.6768 | 0.6736 | 6 |
+
+Interpretation:
+- **DAN + PCA** achieves the highest test accuracy and macro F1 score, indicating the best overall performance.
+- Applying **PCA feature reduction significantly improves the DAN model compared to the original DAN using raw features.**
+- Deep learning models (DAN, BiRNN, BiLSTM) outperform classical machine learning models.
+
 ---
 
 # Expected Outcome
