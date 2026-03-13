@@ -404,7 +404,7 @@ The models were evaluated using the following metrics:
 
 These metrics were used to compare the performance of **DAN with baseline models**.
 
-=== Model Comparison Table ===
+## Model Comparison Table
 
 | Model | Type | Input Data | Train Acc | Test Acc | Precision | Recall | Macro F1 | Rank (Acc) |
 |------|------|------------|-----------|----------|-----------|--------|----------|------------|
@@ -419,12 +419,6 @@ Interpretation:
 - **DAN + PCA** achieves the highest test accuracy and macro F1 score, indicating the best overall performance.
 - Applying **PCA feature reduction significantly improves the DAN model compared to the original DAN using raw features.**
 - Deep learning models (DAN, BiRNN, BiLSTM) outperform classical machine learning models.
-
----
-
-# Expected Outcome
-
-The Deep Adaptation Network is expected to outperform traditional machine learning models because it reduces domain discrepancy and learns more generalized features.
 
 ------------------------------------------------------------------------
 
