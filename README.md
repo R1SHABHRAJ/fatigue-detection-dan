@@ -41,8 +41,8 @@ fatigue-detection-ml/
 
 Clone the repository:
 
-git clone https://github.com/R1SHABHRAJ/fatigue-detection-ml.git cd
-fatigue-detection-ml
+git clone https://github.com/R1SHABHRAJ/fatigue-detection-dan.git 
+cd fatigue-detection-ml
 
 Create a virtual environment:
 
