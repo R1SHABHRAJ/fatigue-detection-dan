@@ -404,10 +404,6 @@ The models were evaluated using the following metrics:
 
 These metrics were used to compare the performance of **DAN with baseline models**.
 
-============================================================
-FULL MODEL COMPARISON SUMMARY
-============================================================
-
 === Model Comparison Table ===
 
 | Model | Type | Input Data | Train Acc | Test Acc | Precision | Recall | Macro F1 | Rank (Acc) |
