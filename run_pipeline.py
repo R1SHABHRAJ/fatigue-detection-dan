@@ -206,10 +206,9 @@ dt_model, dt_acc, dt_prec, dt_rec, dt_f1, dt_cm = train_decision_tree(
 )
 
 
-print("\nTraining complete")
+print("\nML Training complete")
 
-print("SVM Accuracy:", svm_acc)
-print("Decision Tree Accuracy:", dt_acc)
+
 
 # ============================================================
 # Standardization + PCA 
@@ -439,6 +438,4 @@ dan_acc = evaluate_model(
 )
 
 print("\nDeep Model Results")
-print("BiRNN Accuracy:", birnn_acc)
-print("BiLSTM Accuracy:", bilstm_acc)
-print("DAN Accuracy:", dan_acc)
+print("Saved in results folder")
