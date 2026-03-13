@@ -70,7 +70,61 @@ The primary objective of data collection was to investigate the feasibility of a
 
 In addition to physiological signals, subjective fatigue assessment was performed using the **Multidimensional Fatigue Inventory (MFI‑20) questionnaire**, providing validated self‑report measures across multiple fatigue dimensions.  
 
+## Dataset Setup
 
+The dataset used in this project is provided in a compressed file due to GitHub upload limitations.
+
+### Data Location
+
+Inside the "data/" folder 'data.zip' is placed as:
+
+data/
+├── data.zip
+
+The file "data.zip" contains the physiological signal recordings for 25 drivers, where each driver file follows the format:
+
+drive1.csv
+drive2.csv
+...
+drive25.csv
+
+Each CSV file contains the following physiological signals:
+
+- ECG – Electrocardiogram signal
+- EEG – Electroencephalogram signal
+- GSR – Galvanic Skin Response signal
+
+The file "Questionnaire_VS_Model.csv" contains the fatigue labels derived from the MFI-20 questionnaire, which are mapped to the corresponding driver recordings during the pipeline execution.
+
+--------------------------------------------------
+
+## Extracting the Dataset
+
+Before running the project, extract the dataset from "data.zip".
+
+Step 1 – Navigate to the data folder
+
+cd data
+
+Step 2 – Extract the dataset
+
+Linux / Mac
+
+unzip data.zip
+
+Windows (PowerShell)
+
+Expand-Archive data.zip
+
+After extraction, the folder structure should look like:
+
+data/
+├── drive1.csv
+├── drive2.csv
+├── drive3.csv
+...
+├── drive25.csv
+├── Questionnaire_VS_Model.csv
 
 ------------------------------------------------------------------------
 
@@ -426,7 +480,15 @@ Run the main pipeline:
 
 python run_pipeline.py
 
-Or run the notebook:
+The pipeline will:
+
+1. Load all driver recordings
+2. Map fatigue labels from the questionnaire
+3. Perform signal preprocessing
+4. Extract physiological features
+5. Train baseline models and deep learning models
+
+Or run the notebook directly, which is better optimized with hyperparameters:
 
 jupyter notebook notebooks/DAN_notebook.ipynb
 
@@ -439,6 +501,7 @@ Outputs include:
 - Confusion matrices 
 - SHAP plots 
 - LIME explanations
+- Statistical significance testing report
 
 These are saved in the results/ directory.
 
