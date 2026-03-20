@@ -268,7 +268,7 @@ The proposed system includes:
 
 ---
 
-# Deep Adaptation Network (DAN)
+# Domain Adaptation Network (DAN)
 
 ## Motivation
 
